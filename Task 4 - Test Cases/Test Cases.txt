@@ -1,0 +1,55 @@
+Test Case 1
+
+Title: Check that all header elements are appeared
+
+1. Open https://github.com/
+2. Check that logo is displayed.
+3. Check that the navigation menu with 4 elements is displayed.
+4. Check that the search field is displayed.
+5. Check that Sign in button is displayed.
+6. Check that Sign Up button is displayed.
+
+Expected result: All mentioned elements is displayed in the header on the page.
+
+Test Case 2
+
+Title: Check the search fields funcionality
+
+1. Open https://github.com/
+2. Click the search field
+3. Enter the search request
+4. Press the search button
+
+Exprected result: The "linux" keyword is included in the search result. The search result is relevant.
+
+Test Case 3 
+
+Title: Check that dropdowns in navigation menu are opening.
+
+1. Open https://github.com/
+2. Hover the mouse over the "Product" menu item
+3. Hover the mouse over the "Solutions" menu item
+4. Hover the mouse over the "Open Source" menu item
+
+Expected result: The dropdown menues are opened after hovering the mouse over one of the menu items.
+
+Test Case 4
+
+Title: Check the git download link for windows.
+
+1. Open https://github.com/
+2. Scroll the page down to the footer.
+3. Click GitHub Desktop
+4. Check the download link
+
+Expected result: The download link is valid.
+
+Test Case 5
+
+Title: Check the navigating from pricing to registration page.
+
+1. Open https://github.com/
+2. Click the Pricing in the header
+3. Click "Join for free"
+
+Expected result: The registration page is opened.

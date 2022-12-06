@@ -1,0 +1,123 @@
+Loc 1
+https://v5.webdriver.io/docs/api.html
+Write css and xpath locators from elements from the screen 1.
+
+Introduction
+	XPath
+	//h3[contains(text(),'Introduction')]
+	(//h3[@class="navGroupCategoryTitle"])[1]
+
+API Docs
+	CSS
+	[href="/docs/api.html"].navItem
+	XPath
+	//a[contains(text(),'API Docs')]
+	//a[@href="/docs/api.html"][@class="navItem"]
+
+Protocols
+	XPath
+	//h3[contains(text(),'Protocols')]
+	(//h3[@class="navGroupCategoryTitle"])[2]
+
+Webdriver protocol
+	CSS
+	.navItem[href="/docs/api/webdriver.html"]
+	XPath
+	//a[contains(text(),'Webdriver Protocol')]
+	//a[@href="/docs/api/webdriver.html"][@class="navItem"]
+
+Appium
+	CSS
+	[href="/docs/api/appium.html"]
+	XPath
+	//a[contains(text(),'Appium')][@class='navItem']
+	//a[@href="/docs/api/appium.html"]
+
+JSON Wire Protocol
+	CSS
+	[href="/docs/api/jsonwp.html"]
+	XPath
+	(//a[contains(text(),'JSON Wire Protocol')])[1]
+	//a[@href="/docs/api/jsonwp.html"]
+
+Mobile JSON Wire Protocol
+	CSS
+	XPath
+	//a[@href="/docs/api/mjsonwp.html"]
+	//a[contains(text(),' JSON Wire Protocol')]
+
+Chromium
+	CSS
+	[href="/docs/api/chromium.html"]
+	XPath
+	//a[@href="/docs/api/chromium.html"]
+	//a[contains(text(),'Chromium')]
+
+Sauce Labs
+	CSS
+	[href="/docs/api/saucelabs.html"]
+	XPath
+	//a[contains(text(),'Sauce Labs')]
+	//a[@href="/docs/api/saucelabs.html"]
+
+Selenium Standalone
+	CSS
+	[href="/docs/api/selenium.html"]
+	XPath
+	//a[@href="/docs/api/selenium.html"]
+	//a[contains(text(),'Selenium Standalone')]
+
+Guide
+	CSS
+	[href="/docs/gettingstarted.html"][target]
+	XPath
+	//a[@href="/docs/gettingstarted.html"][@target]
+	(//a[@href="/docs/gettingstarted.html"])[1]
+	//a[contains(text(),'Guide')]
+
+Help
+	CSS
+	[href="/help.html"][target]
+	XPath
+	//a[contains(text(),'Help')][@target]
+	//a[@href="/help.html"][@target]
+	(//a[@href="/help.html"])[1]
+
+Blog
+	CSS
+	[href="/blog/"]
+	XPath
+	//a[@href="/blog/"]
+	//a[contains(text(),'Blog')][@target]
+	(//a[contains(text(),'Blog')])[1]
+
+EDIT
+	CSS
+	[class="edit-page-link button"]
+	[href*="edit/master/docs/API.md"]
+	[class="postHeader"] a
+	XPath
+	//a[@class="edit-page-link button"]
+	//a[@href="https://github.com/webdriverio/webdriverio/edit/master/docs/API.md"]
+	//a[contains(text(),'Edit')]
+
+Contribute
+	CSS
+	li [href="#contribute"]
+	XPath
+	//a[contains(text(),'Contribute')]
+	//li/a[@href="#contribute"]
+	(//a[@href="#contribute"])[2]
+
+v4.webdriver.io
+	CSS
+	[href="http://v4.webdriver.io"]
+	XPath
+	//a[@href="http://v4.webdriver.io"]
+
+paragraph
+	CSS
+	h2+p:nth-of-type(2)
+	XPath
+	//div/span/p[position()=2]
+	//p[contains(text(),"Each")]

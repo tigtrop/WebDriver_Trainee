@@ -1,0 +1,6 @@
+Page object pattern adventages.
+
+It makes easier in maintaining the code (flow in the UI is separated from verification)
+Makes code readable (Methods get more realistic names)
+Makes the code reusable (object repository is independent of test cases)
+The Code becomes less and optimised

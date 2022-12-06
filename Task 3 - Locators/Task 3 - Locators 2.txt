@@ -1,0 +1,87 @@
+Task 3 Locators
+Part 2
+
+
+Docs
+	CSS
+	[href="/"][class]+div h5
+	XPath
+	(//div/h5)[1]
+	//h5[contains(text(),'Docs')]
+
+Getting Started
+	CSS
+	h5 + a[href="/docs/gettingstarted.html"]
+	[href="/"][class]+div h5+a
+	XPath
+	//a[contains(text(),'Getting Started')]
+	//a[@href="/docs/gettingstarted.html"][not(@target)]
+	
+API Reference
+	CSS
+	div>a[href="/docs/api.html"]
+	[href="/"][class]+div h5+a+a
+	XPath
+	//a[@href="/docs/api.html"][not(@target)]
+	//a[contains(text(),'API Reference')]
+
+Help
+	CSS
+	div>[href="/help.html"]
+	[href="/"][class]+div h5+a+a+a
+	XPAth
+	//a[contains(text(),'Help')][not(@target)]
+	//a[@href="/help.html"][not(@target)]
+	(//a[@href="/help.html"])[2]	
+
+Community
+	CSS
+	[href="/"]+div+div h5
+	XPath
+	//h5[contains(text(),'Community')]
+	(//div/h5)[2]
+
+Stack Overflow
+	CSS
+	[href*="https://stackoverflow.com/"]
+	[href="/"]+div+div h5+a
+	XPath
+	//a[contains(text(),'Stack Overflow')]
+	//a[@href="https://stackoverflow.com/questions/tagged/webdriver-io"]
+
+Support Chat
+	CSS
+	[href="/"]+div+div h5+a+a
+	[href="/"]+div+div [href="https://gitter.im/webdriverio/webdriverio"]
+	XPath
+	//a[contains(text(),'Support Chat')]
+	//a[@href="https://gitter.im/webdriverio/webdriverio"][not(@target)]
+
+Twitter
+	CSS
+	[href="/"]+div+div h5+a+a+a
+	[href="https://twitter.com/webdriverio"]
+	XPath
+	//a[contains(text(),'Twitter')]
+	//a[@href="https://twitter.com/webdriverio"]
+
+More
+	CSS
+	[href="/"]+div+div+div h5
+	XPath
+	//h5[contains(text(),'More')]
+	(//div/h5)[3]
+
+Blog
+	CSS
+	[href="/blog"]
+	XPath
+	//a[@href="/blog"]
+	//a[contains(text(),'Blog')][not(@target)]
+
+GitHub
+	CSS
+	div>a[href="https://github.com/webdriverio/webdriverio"]
+	XPath
+	//div/a[@href="https://github.com/webdriverio/webdriverio"]
+	//div/a[contains(text(),'GitHub')]

@@ -1,0 +1,199 @@
+Execution of 1 workers started at 2022-12-05T18:23:23.732Z
+
+2022-12-05T18:23:23.769Z INFO @wdio/cli:launcher: Run onPrepare hook
+2022-12-05T18:23:23.841Z INFO chromedriver: Initiate Chromedriver Launcher (v8.0.0)
+2022-12-05T18:23:23.847Z INFO chromedriver: Start Chromedriver (C:\QA\LuxeQulity-project\webdriverio-test\node_modules\chromedriver\lib\chromedriver\chromedriver.exe) with args --port=9515 --url-base=/
+2022-12-05T18:23:23.886Z INFO chromedriver: Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 9515
+2022-12-05T18:23:23.887Z INFO chromedriver: Only local connections are allowed.
+2022-12-05T18:23:23.888Z INFO chromedriver: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+2022-12-05T18:23:23.897Z INFO chromedriver: ChromeDriver was started successfully.
+2022-12-05T18:23:23.977Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-12-05T18:23:23.982Z INFO @wdio/local-runner: Start worker 0-0 with arg: run,./wdio.conf.js,--spec,.\test\specs\Spec10 - Careers.js
+[0-0] 2022-12-05T18:23:24.882Z INFO @wdio/local-runner: Run worker command: run
+[0-0] RUNNING in chrome - C:\QA\LuxeQulity-project\webdriverio-test\test\specs\Spec10 - Careers.js
+[0-0] 2022-12-05T18:23:25.204Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2022-12-05T18:23:25.306Z INFO webdriver: [POST] http://localhost:9515/session
+[0-0] 2022-12-05T18:23:25.306Z INFO webdriver: DATA {
+[0-0]   capabilities: {
+[0-0]     alwaysMatch: {
+[0-0]       'experitest:accessKey': 'EXPERITEST_ACCESS_KEY',
+[0-0]       browserName: 'chrome',
+[0-0]       acceptInsecureCerts: true
+[0-0]     },
+[0-0]     firstMatch: [ {} ]
+[0-0]   },
+[0-0]   desiredCapabilities: {
+[0-0]     'experitest:accessKey': 'EXPERITEST_ACCESS_KEY',
+[0-0]     browserName: 'chrome',
+[0-0]     acceptInsecureCerts: true
+[0-0]   }
+[0-0] }
+
+DevTools listening on ws://127.0.0.1:14425/devtools/browser/45d8984b-ea94-4982-9a8f-9b1176133e97
+2022-12-05T18:23:26.189Z WARN chromedriver: [1670264606.189][WARNING]: This version of ChromeDriver has not been tested with Chrome version 108.
+[0-0] 2022-12-05T18:23:26.277Z INFO webdriver: COMMAND navigateTo("https://github.com/")
+[0-0] 2022-12-05T18:23:26.278Z INFO webdriver: [POST] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/url
+[0-0] 2022-12-05T18:23:26.278Z INFO webdriver: DATA { url: 'https://github.com/' }
+[0-0] 2022-12-05T18:23:27.588Z INFO webdriver: COMMAND findElement("css selector", "[href="/about/careers"]")
+[0-0] 2022-12-05T18:23:27.589Z INFO webdriver: [POST] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element
+[0-0] 2022-12-05T18:23:27.589Z INFO webdriver: DATA { using: 'css selector', value: '[href="/about/careers"]' }
+[0-0] 2022-12-05T18:23:28.225Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '52e38432-22d0-4559-936f-4290f3d9245e'
+[0-0] }
+[0-0] 2022-12-05T18:23:28.244Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2022-12-05T18:23:28.245Z INFO webdriver: [POST] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/execute/sync
+[0-0] 2022-12-05T18:23:28.245Z INFO webdriver: DATA {
+[0-0]   script: 'return (function (elem, options) {\n' +
+[0-0]     '        elem.scrollIntoView(options);\n' +
+[0-0]     '    }).apply(null, arguments)',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': '52e38432-22d0-4559-936f-4290f3d9245e',
+[0-0]       ELEMENT: '52e38432-22d0-4559-936f-4290f3d9245e'
+[0-0]     },
+[0-0]     true
+[0-0]   ]
+[0-0] }
+[0-0] 2022-12-05T18:23:28.286Z INFO webdriver: COMMAND findElement("css selector", "[href="/about/careers"]")
+[0-0] 2022-12-05T18:23:28.286Z INFO webdriver: [POST] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element
+[0-0] 2022-12-05T18:23:28.287Z INFO webdriver: DATA { using: 'css selector', value: '[href="/about/careers"]' }
+[0-0] 2022-12-05T18:23:28.310Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '52e38432-22d0-4559-936f-4290f3d9245e'
+[0-0] }
+[0-0] 2022-12-05T18:23:28.314Z INFO webdriver: COMMAND elementClick("52e38432-22d0-4559-936f-4290f3d9245e")
+[0-0] 2022-12-05T18:23:28.315Z INFO webdriver: [POST] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element/52e38432-22d0-4559-936f-4290f3d9245e/click
+[0-0] 2022-12-05T18:23:30.473Z INFO webdriver: COMMAND findElement("css selector", "[href="#positions"]")
+[0-0] 2022-12-05T18:23:30.474Z INFO webdriver: [POST] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element
+[0-0] 2022-12-05T18:23:30.474Z INFO webdriver: DATA { using: 'css selector', value: '[href="#positions"]' }
+[0-0] 2022-12-05T18:23:30.525Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '5d14d4f4-6638-4641-82b9-18283556ef79'
+[0-0] }
+[0-0] 2022-12-05T18:23:30.532Z INFO webdriver: COMMAND elementClick("5d14d4f4-6638-4641-82b9-18283556ef79")
+[0-0] 2022-12-05T18:23:30.534Z INFO webdriver: [POST] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element/5d14d4f4-6638-4641-82b9-18283556ef79/click
+[0-0] 2022-12-05T18:23:30.654Z INFO webdriver: COMMAND findElement("xpath", "(//span[@class="text-left flex-auto py-4"])[1] ")
+[0-0] 2022-12-05T18:23:30.654Z INFO webdriver: [POST] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element
+[0-0] 2022-12-05T18:23:30.654Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '(//span[@class="text-left flex-auto py-4"])[1] '
+[0-0] }
+[0-0] 2022-12-05T18:23:30.694Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '63646bfb-ed1c-4db3-a10f-90bbcafd2077'
+[0-0] }
+[0-0] 2022-12-05T18:23:30.697Z INFO webdriver: COMMAND getElementText("63646bfb-ed1c-4db3-a10f-90bbcafd2077")
+[0-0] 2022-12-05T18:23:30.698Z INFO webdriver: [GET] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element/63646bfb-ed1c-4db3-a10f-90bbcafd2077/text
+[0-0] 2022-12-05T18:23:30.730Z INFO webdriver: RESULT Design
+[0-0] 2022-12-05T18:23:30.730Z INFO webdriver: COMMAND findElement("xpath", "(//span[@class="text-left flex-auto py-4"])[2] ")
+[0-0] 2022-12-05T18:23:30.731Z INFO webdriver: [POST] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element    
+[0-0] 2022-12-05T18:23:30.731Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '(//span[@class="text-left flex-auto py-4"])[2] '
+[0-0] }
+[0-0] 2022-12-05T18:23:30.765Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'e5ac32c9-c2b4-445b-8824-655e09f99c5c'
+[0-0] }
+[0-0] 2022-12-05T18:23:30.773Z INFO webdriver: COMMAND getElementText("e5ac32c9-c2b4-445b-8824-655e09f99c5c")
+[0-0] 2022-12-05T18:23:30.774Z INFO webdriver: [GET] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element/e5ac32c9-c2b4-445b-8824-655e09f99c5c/text
+[0-0] 2022-12-05T18:23:30.807Z INFO webdriver: RESULT Engineering
+[0-0] 2022-12-05T18:23:30.808Z INFO webdriver: COMMAND findElement("xpath", "(//span[@class="text-left flex-auto py-4"])[3] ")
+[0-0] 2022-12-05T18:23:30.808Z INFO webdriver: [POST] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element    
+[0-0] 2022-12-05T18:23:30.808Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '(//span[@class="text-left flex-auto py-4"])[3] '
+[0-0] }
+[0-0] 2022-12-05T18:23:30.830Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'fbd3df3e-1516-4d64-a008-2ff60bc6b2e2'
+[0-0] }
+[0-0] 2022-12-05T18:23:30.835Z INFO webdriver: COMMAND getElementText("fbd3df3e-1516-4d64-a008-2ff60bc6b2e2")
+[0-0] 2022-12-05T18:23:30.836Z INFO webdriver: [GET] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element/fbd3df3e-1516-4d64-a008-2ff60bc6b2e2/text
+[0-0] 2022-12-05T18:23:30.864Z INFO webdriver: RESULT Human Resources
+[0-0] 2022-12-05T18:23:30.865Z INFO webdriver: COMMAND findElement("xpath", "(//span[@class="text-left flex-auto py-4"])[4] ")
+[0-0] 2022-12-05T18:23:30.865Z INFO webdriver: [POST] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element    
+[0-0] 2022-12-05T18:23:30.865Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '(//span[@class="text-left flex-auto py-4"])[4] '
+[0-0] }
+[0-0] 2022-12-05T18:23:30.894Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '0c8f992a-00c9-45d6-84c8-7958dc25b775'
+[0-0] }
+[0-0] 2022-12-05T18:23:30.896Z INFO webdriver: COMMAND getElementText("0c8f992a-00c9-45d6-84c8-7958dc25b775")
+[0-0] 2022-12-05T18:23:30.896Z INFO webdriver: [GET] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element/0c8f992a-00c9-45d6-84c8-7958dc25b775/text
+[0-0] 2022-12-05T18:23:30.926Z INFO webdriver: RESULT Marketing
+[0-0] 2022-12-05T18:23:30.926Z INFO webdriver: COMMAND findElement("xpath", "(//span[@class="text-left flex-auto py-4"])[5] ")
+[0-0] 2022-12-05T18:23:30.927Z INFO webdriver: [POST] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element    
+[0-0] 2022-12-05T18:23:30.927Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '(//span[@class="text-left flex-auto py-4"])[5] '
+[0-0] }
+[0-0] 2022-12-05T18:23:30.947Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'b92631c7-ff0a-4f62-9f63-882ecfa7a938'
+[0-0] }
+[0-0] 2022-12-05T18:23:30.952Z INFO webdriver: COMMAND getElementText("b92631c7-ff0a-4f62-9f63-882ecfa7a938")
+[0-0] 2022-12-05T18:23:30.953Z INFO webdriver: [GET] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element/b92631c7-ff0a-4f62-9f63-882ecfa7a938/text
+[0-0] 2022-12-05T18:23:30.978Z INFO webdriver: RESULT Operations
+[0-0] 2022-12-05T18:23:30.979Z INFO webdriver: COMMAND findElement("xpath", "(//span[@class="text-left flex-auto py-4"])[6] ")  
+[0-0] 2022-12-05T18:23:30.980Z INFO webdriver: [POST] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element    
+[0-0] 2022-12-05T18:23:30.980Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '(//span[@class="text-left flex-auto py-4"])[6] '
+[0-0] }
+[0-0] 2022-12-05T18:23:31.000Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '2a39e9a3-c4e4-4d80-8bc6-38ec3223ace8'
+[0-0] }
+[0-0] 2022-12-05T18:23:31.005Z INFO webdriver: COMMAND getElementText("2a39e9a3-c4e4-4d80-8bc6-38ec3223ace8")
+[0-0] 2022-12-05T18:23:31.005Z INFO webdriver: [GET] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element/2a39e9a3-c4e4-4d80-8bc6-38ec3223ace8/text
+[0-0] 2022-12-05T18:23:31.025Z INFO webdriver: RESULT Product
+[0-0] 2022-12-05T18:23:31.026Z INFO webdriver: COMMAND findElement("xpath", "(//span[@class="text-left flex-auto py-4"])[7] ")  
+[0-0] 2022-12-05T18:23:31.026Z INFO webdriver: [POST] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element    
+[0-0] 2022-12-05T18:23:31.026Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '(//span[@class="text-left flex-auto py-4"])[7] '
+[0-0] }
+[0-0] 2022-12-05T18:23:31.043Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '052dc096-bf82-4be2-a2e8-42b6a3c8be0d'
+[0-0] }
+[0-0] 2022-12-05T18:23:31.046Z INFO webdriver: COMMAND getElementText("052dc096-bf82-4be2-a2e8-42b6a3c8be0d")
+[0-0] 2022-12-05T18:23:31.047Z INFO webdriver: [GET] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element/052dc096-bf82-4be2-a2e8-42b6a3c8be0d/text
+[0-0] 2022-12-05T18:23:31.068Z INFO webdriver: RESULT Sales
+[0-0] 2022-12-05T18:23:31.069Z INFO webdriver: COMMAND findElement("xpath", "(//span[@class="text-left flex-auto py-4"])[8] ")  
+[0-0] 2022-12-05T18:23:31.070Z INFO webdriver: [POST] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element    
+[0-0] 2022-12-05T18:23:31.070Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '(//span[@class="text-left flex-auto py-4"])[8] '
+[0-0] }
+[0-0] 2022-12-05T18:23:31.087Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'c9ab7dde-38b3-44e5-8800-4127a1983975'
+[0-0] }
+[0-0] 2022-12-05T18:23:31.091Z INFO webdriver: COMMAND getElementText("c9ab7dde-38b3-44e5-8800-4127a1983975")
+[0-0] 2022-12-05T18:23:31.091Z INFO webdriver: [GET] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element/c9ab7dde-38b3-44e5-8800-4127a1983975/text
+[0-0] 2022-12-05T18:23:31.113Z INFO webdriver: RESULT Security
+[0-0] 2022-12-05T18:23:31.113Z INFO webdriver: COMMAND findElement("xpath", "(//span[@class="text-left flex-auto py-4"])[9] ")  
+[0-0] 2022-12-05T18:23:31.113Z INFO webdriver: [POST] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element    
+[0-0] 2022-12-05T18:23:31.113Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '(//span[@class="text-left flex-auto py-4"])[9] '
+[0-0] }
+[0-0] 2022-12-05T18:23:31.133Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '1315aa8b-a9e3-4d26-a375-6b7c4614ee85'
+[0-0] }
+[0-0] 2022-12-05T18:23:31.137Z INFO webdriver: COMMAND getElementText("1315aa8b-a9e3-4d26-a375-6b7c4614ee85")
+[0-0] 2022-12-05T18:23:31.138Z INFO webdriver: [GET] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f/element/1315aa8b-a9e3-4d26-a375-6b7c4614ee85/text
+[0-0] 2022-12-05T18:23:31.158Z INFO webdriver: RESULT Support
+[0-0] 2022-12-05T18:23:33.177Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2022-12-05T18:23:33.178Z INFO webdriver: [DELETE] http://localhost:9515/session/ed49bbf8a587abae199997f50608420f
+[0-0] PASSED in chrome - C:\QA\LuxeQulity-project\webdriverio-test\test\specs\Spec10 - Careers.js
+2022-12-05T18:23:33.493Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2022-12-05T18:23:33.495Z INFO @wdio/cli:launcher: Run onComplete hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 108.0.5359.94 windows #0-0] Running: chrome (v108.0.5359.94) on windows
+[chrome 108.0.5359.94 windows #0-0] Session ID: ed49bbf8a587abae199997f50608420f
+[chrome 108.0.5359.94 windows #0-0]
+[chrome 108.0.5359.94 windows #0-0] » \test\specs\Spec10 - Careers.js
+[chrome 108.0.5359.94 windows #0-0] Check the careers page
+[chrome 108.0.5359.94 windows #0-0]    ✓ Check opened positions
+[chrome 108.0.5359.94 windows #0-0]
+[chrome 108.0.5359.94 windows #0-0] 1 passing (7s)
+
+
+Spec Files:      1 passed, 1 total (100% completed) in 00:00:09

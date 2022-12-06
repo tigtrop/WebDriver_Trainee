@@ -1,0 +1,105 @@
+Execution of 1 workers started at 2022-12-02T18:34:08.818Z
+
+2022-12-02T18:34:08.856Z INFO @wdio/cli:launcher: Run onPrepare hook
+2022-12-02T18:34:08.926Z INFO chromedriver: Initiate Chromedriver Launcher (v8.0.0)
+2022-12-02T18:34:08.932Z INFO chromedriver: Start Chromedriver (C:\QA\LuxeQulity-project\webdriverio-test\node_modules\chromedriver\lib\chromedriver\chromedriver.exe) with args --port=9515 --url-base=/
+2022-12-02T18:34:08.978Z INFO chromedriver: Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 9515
+2022-12-02T18:34:08.980Z INFO chromedriver: Only local connections are allowed.
+2022-12-02T18:34:08.981Z INFO chromedriver: Please see https://chromedriver.chromium.org/security-considerations for suggestions 
+on keeping ChromeDriver safe.
+2022-12-02T18:34:08.989Z INFO chromedriver: ChromeDriver was started successfully.
+2022-12-02T18:34:09.067Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-12-02T18:34:09.069Z INFO @wdio/local-runner: Start worker 0-0 with arg: run,./wdio.conf.js,--spec,.\test\specs\Spec7.js
+[0-0] 2022-12-02T18:34:09.893Z INFO @wdio/local-runner: Run worker command: run
+[0-0] RUNNING in chrome - C:\QA\LuxeQulity-project\webdriverio-test\test\specs\Spec7.js
+[0-0] 2022-12-02T18:34:10.225Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2022-12-02T18:34:10.326Z INFO webdriver: [POST] http://localhost:9515/session
+[0-0] 2022-12-02T18:34:10.328Z INFO webdriver: DATA {
+[0-0]   capabilities: {
+[0-0]     alwaysMatch: {
+[0-0]       'experitest:accessKey': 'EXPERITEST_ACCESS_KEY',
+[0-0]       browserName: 'chrome',
+[0-0]       acceptInsecureCerts: true
+[0-0]     },
+[0-0]     firstMatch: [ {} ]
+[0-0]   },
+[0-0]   desiredCapabilities: {
+[0-0]     'experitest:accessKey': 'EXPERITEST_ACCESS_KEY',
+[0-0]     browserName: 'chrome',
+[0-0]     acceptInsecureCerts: true
+[0-0]   }
+[0-0] }
+
+DevTools listening on ws://127.0.0.1:5714/devtools/browser/a573c816-1d1e-41c3-9b35-d99ada95072f
+2022-12-02T18:34:11.010Z WARN chromedriver: [1670006051.010][WARNING]: This version of ChromeDriver has not been tested with Chrome version 108.
+[0-0] 2022-12-02T18:34:11.166Z INFO webdriver: COMMAND navigateTo("https://github.com/")
+[0-0] 2022-12-02T18:34:11.167Z INFO webdriver: [POST] http://localhost:9515/session/f45ce18656a71bacf4a4ace9e8c46a97/url
+[0-0] 2022-12-02T18:34:11.167Z INFO webdriver: DATA { url: 'https://github.com/' }
+[0-0] 2022-12-02T18:34:12.554Z INFO webdriver: COMMAND findElement("css selector", ".d-lg-flex.list-style-none > li:nth-of-type(3)")
+[0-0] 2022-12-02T18:34:12.554Z INFO webdriver: [POST] http://localhost:9515/session/f45ce18656a71bacf4a4ace9e8c46a97/element
+[0-0] 2022-12-02T18:34:12.555Z INFO webdriver: DATA {
+[0-0]   using: 'css selector',
+[0-0]   value: '.d-lg-flex.list-style-none > li:nth-of-type(3)'
+[0-0] }
+[0-0] 2022-12-02T18:34:12.590Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '63d3abb5-69b9-4fe5-be47-004101a906d5'
+[0-0] }
+[0-0] 2022-12-02T18:34:12.603Z INFO webdriver: COMMAND elementClick("63d3abb5-69b9-4fe5-be47-004101a906d5")
+[0-0] 2022-12-02T18:34:12.604Z INFO webdriver: [POST] http://localhost:9515/session/f45ce18656a71bacf4a4ace9e8c46a97/element/63d3abb5-69b9-4fe5-be47-004101a906d5/click
+[0-0] 2022-12-02T18:34:14.217Z INFO webdriver: COMMAND findElement("css selector", ".HeaderMenu-item [href="/topics"]")
+[0-0] 2022-12-02T18:34:14.218Z INFO webdriver: [POST] http://localhost:9515/session/f45ce18656a71bacf4a4ace9e8c46a97/element
+[0-0] 2022-12-02T18:34:14.218Z INFO webdriver: DATA { using: 'css selector', value: '.HeaderMenu-item [href="/topics"]' }        
+[0-0] 2022-12-02T18:34:14.254Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '11551525-05be-4975-95d7-e62f75558169'
+[0-0] }
+[0-0] 2022-12-02T18:34:14.259Z INFO webdriver: COMMAND elementClick("11551525-05be-4975-95d7-e62f75558169")
+[0-0] 2022-12-02T18:34:14.259Z INFO webdriver: [POST] http://localhost:9515/session/f45ce18656a71bacf4a4ace9e8c46a97/element/11551525-05be-4975-95d7-e62f75558169/click
+[0-0] 2022-12-02T18:34:15.351Z INFO webdriver: COMMAND findElement("css selector", ".h1")
+[0-0] 2022-12-02T18:34:15.351Z INFO webdriver: [POST] http://localhost:9515/session/f45ce18656a71bacf4a4ace9e8c46a97/element
+[0-0] 2022-12-02T18:34:15.351Z INFO webdriver: DATA { using: 'css selector', value: '.h1' }
+[0-0] 2022-12-02T18:34:15.565Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '414ac2b8-db56-4613-bcfe-5a7501ca5a92'
+[0-0] }
+[0-0] 2022-12-02T18:34:15.570Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2022-12-02T18:34:15.570Z INFO webdriver: [POST] http://localhost:9515/session/f45ce18656a71bacf4a4ace9e8c46a97/execute/sync[0-0] 2022-12-02T18:34:15.571Z INFO webdriver: DATA {
+[0-0]   script: 'isElementDisplayed(...) [7963 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': '414ac2b8-db56-4613-bcfe-5a7501ca5a92',
+[0-0]       ELEMENT: '414ac2b8-db56-4613-bcfe-5a7501ca5a92'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2022-12-02T18:34:15.586Z INFO webdriver: RESULT true
+[0-0] 2022-12-02T18:34:15.586Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2022-12-02T18:34:15.587Z INFO webdriver: [POST] http://localhost:9515/session/f45ce18656a71bacf4a4ace9e8c46a97/execute/sync[0-0] 2022-12-02T18:34:15.587Z INFO webdriver: DATA {
+[0-0]   script: 'isElementInViewport(...) [564 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': '414ac2b8-db56-4613-bcfe-5a7501ca5a92',
+[0-0]       ELEMENT: '414ac2b8-db56-4613-bcfe-5a7501ca5a92'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2022-12-02T18:34:15.600Z INFO webdriver: RESULT true
+[13844:14172:1202/203417.224:ERROR:device_event_log_impl.cc(215)] [20:34:17.225] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+[13844:14172:1202/203417.226:ERROR:device_event_log_impl.cc(215)] [20:34:17.227] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+[0-0] 2022-12-02T18:34:17.615Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2022-12-02T18:34:17.615Z INFO webdriver: [DELETE] http://localhost:9515/session/f45ce18656a71bacf4a4ace9e8c46a97
+[0-0] PASSED in chrome - C:\QA\LuxeQulity-project\webdriverio-test\test\specs\Spec7.js
+2022-12-02T18:34:19.750Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2022-12-02T18:34:19.752Z INFO @wdio/cli:launcher: Run onComplete hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 108.0.5359.71 windows #0-0] Running: chrome (v108.0.5359.71) on windows
+[chrome 108.0.5359.71 windows #0-0] Session ID: f45ce18656a71bacf4a4ace9e8c46a97
+[chrome 108.0.5359.71 windows #0-0]
+[chrome 108.0.5359.71 windows #0-0] » \test\specs\Spec7.js
+[chrome 108.0.5359.71 windows #0-0] Check topics page.
+[chrome 108.0.5359.71 windows #0-0]    ✓ Check that topics sign is displayed.
+[chrome 108.0.5359.71 windows #0-0]
+[chrome 108.0.5359.71 windows #0-0] 1 passing (8.4s)
+
+
+Spec Files:      1 passed, 1 total (100% completed) in 00:00:10

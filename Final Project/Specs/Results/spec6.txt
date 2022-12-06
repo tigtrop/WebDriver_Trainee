@@ -1,0 +1,184 @@
+Execution of 1 workers started at 2022-12-01T20:58:53.425Z
+
+2022-12-01T20:58:53.468Z INFO @wdio/cli:launcher: Run onPrepare hook
+2022-12-01T20:58:53.557Z INFO chromedriver: Initiate Chromedriver Launcher (v8.0.0)
+2022-12-01T20:58:53.566Z INFO chromedriver: Start Chromedriver (C:\QA\LuxeQulity-project\webdriverio-test\node_modules\chromedriver\lib\chromedriver\chromedriver.exe) with args --port=9515 --url-base=/
+2022-12-01T20:58:53.674Z INFO chromedriver: Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 9515
+2022-12-01T20:58:53.675Z INFO chromedriver: Only local connections are allowed.
+2022-12-01T20:58:53.675Z INFO chromedriver: Please see https://chromedriver.chromium.org/security-considerations for suggestions 
+on keeping ChromeDriver safe.
+2022-12-01T20:58:53.681Z INFO chromedriver: ChromeDriver was started successfully.
+2022-12-01T20:58:53.744Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-12-01T20:58:53.746Z INFO @wdio/local-runner: Start worker 0-0 with arg: run,./wdio.conf.js,--spec,.\test\specs\Spec6 - SignUp with Email.js
+[0-0] 2022-12-01T20:58:54.556Z INFO @wdio/local-runner: Run worker command: run
+[0-0] RUNNING in chrome - C:\QA\LuxeQulity-project\webdriverio-test\test\specs\Spec6 - SignUp with Email.js
+[0-0] 2022-12-01T20:58:55.207Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2022-12-01T20:58:55.373Z INFO webdriver: [POST] http://localhost:9515/session
+[0-0] 2022-12-01T20:58:55.373Z INFO webdriver: DATA {
+[0-0]   capabilities: {
+[0-0]     alwaysMatch: {
+[0-0]       'experitest:accessKey': 'EXPERITEST_ACCESS_KEY',
+[0-0]       browserName: 'chrome',
+[0-0]       acceptInsecureCerts: true
+[0-0]     },
+[0-0]     firstMatch: [ {} ]
+[0-0]   },
+[0-0]   desiredCapabilities: {
+[0-0]     'experitest:accessKey': 'EXPERITEST_ACCESS_KEY',
+[0-0]     browserName: 'chrome',
+[0-0]     acceptInsecureCerts: true
+[0-0]   }
+[0-0] }
+
+DevTools listening on ws://127.0.0.1:7673/devtools/browser/6807dd4d-6d3b-4660-b730-f03e68440b56
+[0-0] 2022-12-01T20:58:57.151Z INFO webdriver: COMMAND navigateTo("https://github.com/")
+[0-0] 2022-12-01T20:58:57.155Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/url
+[0-0] 2022-12-01T20:58:57.156Z INFO webdriver: DATA { url: 'https://github.com/' }
+[0-0] 2022-12-01T20:58:58.686Z INFO webdriver: COMMAND findElement("css selector", ".HeaderMenu-link[href="/pricing"]")
+[0-0] 2022-12-01T20:58:58.686Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element     
+[0-0] 2022-12-01T20:58:58.686Z INFO webdriver: DATA { using: 'css selector', value: '.HeaderMenu-link[href="/pricing"]' }
+[0-0] 2022-12-01T20:58:59.278Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '0c345461-4cab-41c5-bc2a-07eb8097eccb'
+[0-0] }
+[0-0] 2022-12-01T20:58:59.287Z INFO webdriver: COMMAND elementClick("0c345461-4cab-41c5-bc2a-07eb8097eccb")
+[0-0] 2022-12-01T20:58:59.288Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element/0c345461-4cab-41c5-bc2a-07eb8097eccb/click
+[0-0] 2022-12-01T20:58:59.408Z INFO webdriver: COMMAND findElement("css selector", "[href*="/join?plan=free"]")
+[0-0] 2022-12-01T20:58:59.409Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element
+[0-0] 2022-12-01T20:58:59.409Z INFO webdriver: DATA { using: 'css selector', value: '[href*="/join?plan=free"]' }
+[0-0] 2022-12-01T20:58:59.441Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'no such element: Unable to locate element: {"method":"css selector","selector":"[href*="/join?plan=free"]"}\n' 
++
+[0-0]     '  (Session info: chrome=107.0.5304.122)',
+[0-0]   stacktrace: 'Backtrace:\n' +
+[0-0]     '\tOrdinal0 [0x00A7ACD3+2075859]\n' +
+[0-0]     '\tOrdinal0 [0x00A0EE61+1633889]\n' +
+[0-0]     '\tOrdinal0 [0x0090B7BD+571325]\n' +
+[0-0]     '\tOrdinal0 [0x0093AC2F+764975]\n' +
+[0-0]     '\tOrdinal0 [0x0093AE1B+765467]\n' +
+[0-0]     '\tOrdinal0 [0x0096D0F2+970994]\n' +
+[0-0]     '\tOrdinal0 [0x00957364+881508]\n' +
+[0-0]     '\tOrdinal0 [0x0096B56A+963946]\n' +
+[0-0]     '\tOrdinal0 [0x00957136+880950]\n' +
+[0-0]     '\tOrdinal0 [0x0092FEFD+720637]\n' +
+[0-0]     '\tOrdinal0 [0x00930F3F+724799]\n' +
+[0-0]     '\tGetHandleVerifier [0x00D2EED2+2769538]\n' +
+[0-0]     '\tGetHandleVerifier [0x00D20D95+2711877]\n' +
+[0-0]     '\tGetHandleVerifier [0x00B0A03A+521194]\n' +
+[0-0]     '\tGetHandleVerifier [0x00B08DA0+516432]\n' +
+[0-0]     '\tOrdinal0 [0x00A1682C+1665068]\n' +
+[0-0]     '\tOrdinal0 [0x00A1B128+1683752]\n' +
+[0-0]     '\tOrdinal0 [0x00A1B215+1683989]\n' +
+[0-0]     '\tOrdinal0 [0x00A26484+1729668]\n' +
+[0-0]     '\tBaseThreadInitThunk [0x775BFEF9+25]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x77D47BBE+286]\n' +
+[0-0]     '\tRtlGetAppContainerNamedObjectPath [0x77D47B8E+238]\n'
+[0-0] }
+[0-0] 2022-12-01T20:58:59.447Z INFO webdriver: COMMAND findElements("css selector", "[href*="/join?plan=free"]")
+[0-0] 2022-12-01T20:58:59.447Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/elements    
+[0-0] 2022-12-01T20:58:59.447Z INFO webdriver: DATA { using: 'css selector', value: '[href*="/join?plan=free"]' }
+[0-0] 2022-12-01T20:58:59.483Z INFO webdriver: RESULT []
+[0-0] 2022-12-01T20:58:59.960Z INFO webdriver: COMMAND findElements("css selector", "[href*="/join?plan=free"]")
+[0-0] 2022-12-01T20:58:59.960Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/elements
+[0-0] 2022-12-01T20:58:59.960Z INFO webdriver: DATA { using: 'css selector', value: '[href*="/join?plan=free"]' }
+[0-0] 2022-12-01T20:58:59.974Z INFO webdriver: RESULT []
+[0-0] 2022-12-01T20:59:00.458Z INFO webdriver: COMMAND findElements("css selector", "[href*="/join?plan=free"]")
+[0-0] 2022-12-01T20:59:00.459Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/elements
+[0-0] 2022-12-01T20:59:00.459Z INFO webdriver: DATA { using: 'css selector', value: '[href*="/join?plan=free"]' }
+[0-0] 2022-12-01T20:59:01.105Z INFO webdriver: RESULT [
+[0-0]   {
+[0-0]     'element-6066-11e4-a52e-4f735466cecf': '6baab499-0136-49f6-a8fd-41ce219e8699'
+[0-0]   }
+[0-0] ]
+[0-0] 2022-12-01T20:59:01.108Z INFO webdriver: COMMAND findElement("css selector", "[href*="/join?plan=free"]")
+[0-0] 2022-12-01T20:59:01.109Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element     
+[0-0] 2022-12-01T20:59:01.109Z INFO webdriver: DATA { using: 'css selector', value: '[href*="/join?plan=free"]' }
+[0-0] 2022-12-01T20:59:01.124Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '6baab499-0136-49f6-a8fd-41ce219e8699'
+[0-0] }
+[0-0] 2022-12-01T20:59:01.127Z INFO webdriver: COMMAND elementClick("6baab499-0136-49f6-a8fd-41ce219e8699")
+[0-0] 2022-12-01T20:59:01.127Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element/6baab499-0136-49f6-a8fd-41ce219e8699/click
+[0-0] 2022-12-01T20:59:03.248Z INFO webdriver: COMMAND findElement("css selector", "#user_login")
+[0-0] 2022-12-01T20:59:03.249Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element
+[0-0] 2022-12-01T20:59:03.249Z INFO webdriver: DATA { using: 'css selector', value: '#user_login' }
+[0-0] 2022-12-01T20:59:03.273Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'c01b18ab-c49a-4c7a-b96e-fa155d292f4d'
+[0-0] }
+[0-0] 2022-12-01T20:59:03.275Z INFO webdriver: COMMAND elementClick("c01b18ab-c49a-4c7a-b96e-fa155d292f4d")
+[0-0] 2022-12-01T20:59:03.275Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element/c01b18ab-c49a-4c7a-b96e-fa155d292f4d/click
+[0-0] 2022-12-01T20:59:03.355Z INFO webdriver: COMMAND findElement("css selector", "#user_login")
+[0-0] 2022-12-01T20:59:03.356Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element
+[0-0] 2022-12-01T20:59:03.356Z INFO webdriver: DATA { using: 'css selector', value: '#user_login' }
+[0-0] 2022-12-01T20:59:03.370Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'c01b18ab-c49a-4c7a-b96e-fa155d292f4d'
+[0-0] }
+[0-0] 2022-12-01T20:59:03.372Z INFO webdriver: COMMAND elementClear("c01b18ab-c49a-4c7a-b96e-fa155d292f4d")
+[0-0] 2022-12-01T20:59:03.373Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element/c01b18ab-c49a-4c7a-b96e-fa155d292f4d/clear
+[0-0] 2022-12-01T20:59:03.419Z INFO webdriver: COMMAND elementSendKeys("c01b18ab-c49a-4c7a-b96e-fa155d292f4d", "<Screenshot[base64]>")
+[0-0] 2022-12-01T20:59:03.420Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element/c01b18ab-c49a-4c7a-b96e-fa155d292f4d/value
+[0-0] 2022-12-01T20:59:03.420Z INFO webdriver: DATA { text: 'XRxuySgX' }
+[0-0] 2022-12-01T20:59:03.481Z INFO webdriver: COMMAND findElement("css selector", "#user_email")
+[0-0] 2022-12-01T20:59:03.482Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element
+[0-0] 2022-12-01T20:59:03.482Z INFO webdriver: DATA { using: 'css selector', value: '#user_email' }
+[0-0] 2022-12-01T20:59:03.504Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '511a122b-fca5-46a1-aced-a3bd2ea4c162'
+[0-0] }
+[0-0] 2022-12-01T20:59:03.508Z INFO webdriver: COMMAND elementClick("511a122b-fca5-46a1-aced-a3bd2ea4c162")
+[0-0] 2022-12-01T20:59:03.508Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element/511a122b-fca5-46a1-aced-a3bd2ea4c162/click
+[0-0] 2022-12-01T20:59:03.568Z INFO webdriver: COMMAND findElement("css selector", "#user_email")
+[0-0] 2022-12-01T20:59:03.569Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element     
+[0-0] 2022-12-01T20:59:03.569Z INFO webdriver: DATA { using: 'css selector', value: '#user_email' }
+[0-0] 2022-12-01T20:59:03.586Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '511a122b-fca5-46a1-aced-a3bd2ea4c162'
+[0-0] }
+[0-0] 2022-12-01T20:59:03.588Z INFO webdriver: COMMAND elementClear("511a122b-fca5-46a1-aced-a3bd2ea4c162")
+[0-0] 2022-12-01T20:59:03.588Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element/511a122b-fca5-46a1-aced-a3bd2ea4c162/clear
+[0-0] 2022-12-01T20:59:03.629Z INFO webdriver: COMMAND elementSendKeys("511a122b-fca5-46a1-aced-a3bd2ea4c162", "fcfbc2d4d@d1g4114e.com")
+[0-0] 2022-12-01T20:59:03.630Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element/511a122b-fca5-46a1-aced-a3bd2ea4c162/value
+[0-0] 2022-12-01T20:59:03.630Z INFO webdriver: DATA { text: 'fcfbc2d4d@d1g4114e.com' }
+[0-0] 2022-12-01T20:59:03.714Z INFO webdriver: COMMAND findElement("css selector", "#user_password")
+[0-0] 2022-12-01T20:59:03.714Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element
+[0-0] 2022-12-01T20:59:03.714Z INFO webdriver: DATA { using: 'css selector', value: '#user_password' }
+[0-0] 2022-12-01T20:59:03.728Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'e660a386-a30d-4501-984b-e00fba801b66'
+[0-0] }
+[0-0] 2022-12-01T20:59:03.730Z INFO webdriver: COMMAND elementClick("e660a386-a30d-4501-984b-e00fba801b66")
+[0-0] 2022-12-01T20:59:03.731Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element/e660a386-a30d-4501-984b-e00fba801b66/click
+[0-0] 2022-12-01T20:59:03.792Z INFO webdriver: COMMAND findElement("css selector", "#user_password")
+[0-0] 2022-12-01T20:59:03.792Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element     
+[0-0] 2022-12-01T20:59:03.792Z INFO webdriver: DATA { using: 'css selector', value: '#user_password' }
+[0-0] 2022-12-01T20:59:03.808Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'e660a386-a30d-4501-984b-e00fba801b66'
+[0-0] }
+[0-0] 2022-12-01T20:59:03.810Z INFO webdriver: COMMAND elementClear("e660a386-a30d-4501-984b-e00fba801b66")
+[0-0] 2022-12-01T20:59:03.810Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element/e660a386-a30d-4501-984b-e00fba801b66/clear
+[0-0] 2022-12-01T20:59:03.853Z INFO webdriver: COMMAND elementSendKeys("e660a386-a30d-4501-984b-e00fba801b66", "<Screenshot[base64]>")
+[0-0] 2022-12-01T20:59:03.854Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element/e660a386-a30d-4501-984b-e00fba801b66/value
+[0-0] 2022-12-01T20:59:03.854Z INFO webdriver: DATA { text: 'SNmiQ3GG' }
+[0-0] 2022-12-01T20:59:03.923Z INFO webdriver: COMMAND findElement("css selector", "#all_emails")
+[0-0] 2022-12-01T20:59:03.923Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element
+[0-0] 2022-12-01T20:59:03.923Z INFO webdriver: DATA { using: 'css selector', value: '#all_emails' }
+[0-0] 2022-12-01T20:59:03.938Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '801149cd-1e3d-4b6c-9293-b52baa01d20b'
+[0-0] }
+[0-0] 2022-12-01T20:59:03.940Z INFO webdriver: COMMAND elementClick("801149cd-1e3d-4b6c-9293-b52baa01d20b")
+[0-0] 2022-12-01T20:59:03.940Z INFO webdriver: [POST] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4/element/801149cd-1e3d-4b6c-9293-b52baa01d20b/click
+[0-0] 2022-12-01T20:59:06.015Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2022-12-01T20:59:06.015Z INFO webdriver: [DELETE] http://localhost:9515/session/009f21611180813f7c2d7536b38b3dc4
+[0-0] PASSED in chrome - C:\QA\LuxeQulity-project\webdriverio-test\test\specs\Spec6 - SignUp with Email.js
+2022-12-01T20:59:06.324Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2022-12-01T20:59:06.326Z INFO @wdio/cli:launcher: Run onComplete hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 107.0.5304.122 windows #0-0] Running: chrome (v107.0.5304.122) on windows
+[chrome 107.0.5304.122 windows #0-0] Session ID: 009f21611180813f7c2d7536b38b3dc4
+[chrome 107.0.5304.122 windows #0-0]
+[chrome 107.0.5304.122 windows #0-0] » \test\specs\Spec6 - SignUp with Email.js
+[chrome 107.0.5304.122 windows #0-0] Checking the SignUp with email from main page
+[chrome 107.0.5304.122 windows #0-0]    ✓ Verify thet the capcha label is displayed.
+[chrome 107.0.5304.122 windows #0-0]
+[chrome 107.0.5304.122 windows #0-0] 1 passing (9s)
+
+
+Spec Files:      1 passed, 1 total (100% completed) in 00:00:12

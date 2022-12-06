@@ -1,0 +1,179 @@
+Execution of 1 workers started at 2022-12-01T18:35:40.122Z
+
+2022-12-01T18:35:40.170Z INFO @wdio/cli:launcher: Run onPrepare hook
+2022-12-01T18:35:40.243Z INFO chromedriver: Initiate Chromedriver Launcher (v8.0.0)
+2022-12-01T18:35:40.251Z INFO chromedriver: Start Chromedriver (C:\QA\LuxeQulity-project\webdriverio-test\node_modules\chromedriver\lib\chromedriver\chromedriver.exe) with args --port=9515 --url-base=/
+2022-12-01T18:35:40.300Z INFO chromedriver: Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 9515
+2022-12-01T18:35:40.302Z INFO chromedriver: Only local connections are allowed.
+2022-12-01T18:35:40.304Z INFO chromedriver: Please see https://chromedriver.chromium.org/security-considerations for suggestions 
+on keeping ChromeDriver safe.
+2022-12-01T18:35:40.310Z INFO chromedriver: ChromeDriver was started successfully.
+2022-12-01T18:35:40.374Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-12-01T18:35:40.376Z INFO @wdio/local-runner: Start worker 0-0 with arg: run,./wdio.conf.js,--spec,.\test\specs\Spec5 - Dropdowns.js
+[0-0] 2022-12-01T18:35:41.267Z INFO @wdio/local-runner: Run worker command: run
+[0-0] RUNNING in chrome - C:\QA\LuxeQulity-project\webdriverio-test\test\specs\Spec5 - Dropdowns.js
+[0-0] 2022-12-01T18:35:41.615Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2022-12-01T18:35:41.724Z INFO webdriver: [POST] http://localhost:9515/session
+[0-0] 2022-12-01T18:35:41.724Z INFO webdriver: DATA {
+[0-0]   capabilities: {
+[0-0]     alwaysMatch: {
+[0-0]       'experitest:accessKey': 'EXPERITEST_ACCESS_KEY',
+[0-0]       browserName: 'chrome',
+[0-0]       acceptInsecureCerts: true
+[0-0]     },
+[0-0]     firstMatch: [ {} ]
+[0-0]   },
+[0-0]   desiredCapabilities: {
+[0-0]     'experitest:accessKey': 'EXPERITEST_ACCESS_KEY',
+[0-0]     browserName: 'chrome',
+[0-0]     acceptInsecureCerts: true
+[0-0]   }
+[0-0] }
+
+DevTools listening on ws://127.0.0.1:4243/devtools/browser/f05e8833-fd99-42ab-b73e-afce530d7c4f
+[0-0] 2022-12-01T18:35:42.806Z INFO webdriver: COMMAND navigateTo("https://github.com/")
+[0-0] 2022-12-01T18:35:42.807Z INFO webdriver: [POST] http://localhost:9515/session/a87fb56ad05442febffcb3de9c59b892/url
+[0-0] 2022-12-01T18:35:42.807Z INFO webdriver: DATA { url: 'https://github.com/' }
+[0-0] 2022-12-01T18:35:44.297Z INFO webdriver: COMMAND findElement("css selector", ".d-lg-flex.list-style-none > li:nth-of-type(1)")
+[0-0] 2022-12-01T18:35:44.297Z INFO webdriver: [POST] http://localhost:9515/session/a87fb56ad05442febffcb3de9c59b892/element     
+[0-0] 2022-12-01T18:35:44.298Z INFO webdriver: DATA {
+[0-0]   using: 'css selector',
+[0-0]   value: '.d-lg-flex.list-style-none > li:nth-of-type(1)'
+[0-0] }
+[0-0] 2022-12-01T18:35:44.913Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '860fc80c-6a73-45d8-98ef-d530dd348d47'
+[0-0] }
+[0-0] 2022-12-01T18:35:44.922Z INFO webdriver: COMMAND elementClick("860fc80c-6a73-45d8-98ef-d530dd348d47")
+[0-0] 2022-12-01T18:35:44.922Z INFO webdriver: [POST] http://localhost:9515/session/a87fb56ad05442febffcb3de9c59b892/element/860fc80c-6a73-45d8-98ef-d530dd348d47/click
+[0-0] 2022-12-01T18:35:46.046Z INFO webdriver: COMMAND findElement("xpath", "//div[contains(text(),"Actions")]")
+[0-0] 2022-12-01T18:35:46.048Z INFO webdriver: [POST] http://localhost:9515/session/a87fb56ad05442febffcb3de9c59b892/element
+[0-0] 2022-12-01T18:35:46.048Z INFO webdriver: DATA { using: 'xpath', value: '//div[contains(text(),"Actions")]' }
+[0-0] 2022-12-01T18:35:46.085Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '60ff3f2d-aa1f-499a-ae20-137c9ab388ba'
+[0-0] }
+[0-0] 2022-12-01T18:35:46.093Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2022-12-01T18:35:46.093Z INFO webdriver: [POST] http://localhost:9515/session/a87fb56ad05442febffcb3de9c59b892/execute/sync[0-0] 2022-12-01T18:35:46.094Z INFO webdriver: DATA {
+[0-0]   script: 'isElementDisplayed(...) [7963 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': '60ff3f2d-aa1f-499a-ae20-137c9ab388ba',
+[0-0]       ELEMENT: '60ff3f2d-aa1f-499a-ae20-137c9ab388ba'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2022-12-01T18:35:46.114Z INFO webdriver: RESULT true
+[0-0] 2022-12-01T18:35:46.115Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2022-12-01T18:35:46.115Z INFO webdriver: [POST] http://localhost:9515/session/a87fb56ad05442febffcb3de9c59b892/execute/sync[0-0] 2022-12-01T18:35:46.115Z INFO webdriver: DATA {
+[0-0]   script: 'isElementInViewport(...) [564 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': '60ff3f2d-aa1f-499a-ae20-137c9ab388ba',
+[0-0]       ELEMENT: '60ff3f2d-aa1f-499a-ae20-137c9ab388ba'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2022-12-01T18:35:46.127Z INFO webdriver: RESULT true
+[0-0] 2022-12-01T18:35:46.133Z INFO webdriver: COMMAND findElement("css selector", ".d-lg-flex.list-style-none > li:nth-of-type(2)")
+[0-0] 2022-12-01T18:35:46.134Z INFO webdriver: [POST] http://localhost:9515/session/a87fb56ad05442febffcb3de9c59b892/element     
+[0-0] 2022-12-01T18:35:46.134Z INFO webdriver: DATA {
+[0-0]   using: 'css selector',
+[0-0]   value: '.d-lg-flex.list-style-none > li:nth-of-type(2)'
+[0-0] }
+[0-0] 2022-12-01T18:35:46.152Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '37fb1f98-72c8-4017-813d-b363e3c6ea39'
+[0-0] }
+[0-0] 2022-12-01T18:35:46.154Z INFO webdriver: COMMAND elementClick("37fb1f98-72c8-4017-813d-b363e3c6ea39")
+[0-0] 2022-12-01T18:35:46.154Z INFO webdriver: [POST] http://localhost:9515/session/a87fb56ad05442febffcb3de9c59b892/element/37fb1f98-72c8-4017-813d-b363e3c6ea39/click
+[0-0] 2022-12-01T18:35:47.227Z INFO webdriver: COMMAND findElement("css selector", ".HeaderMenu-dropdown-link[href="/enterprise"]")
+[0-0] 2022-12-01T18:35:47.228Z INFO webdriver: [POST] http://localhost:9515/session/a87fb56ad05442febffcb3de9c59b892/element
+[0-0] 2022-12-01T18:35:47.228Z INFO webdriver: DATA {
+[0-0]   using: 'css selector',
+[0-0]   value: '.HeaderMenu-dropdown-link[href="/enterprise"]'
+[0-0] }
+[0-0] 2022-12-01T18:35:47.269Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '3566fe0a-792a-4edc-82d9-d39b01862d09'
+[0-0] }
+[0-0] 2022-12-01T18:35:47.273Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2022-12-01T18:35:47.274Z INFO webdriver: [POST] http://localhost:9515/session/a87fb56ad05442febffcb3de9c59b892/execute/sync[0-0] 2022-12-01T18:35:47.274Z INFO webdriver: DATA {
+[0-0]   script: 'isElementDisplayed(...) [7963 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': '3566fe0a-792a-4edc-82d9-d39b01862d09',
+[0-0]       ELEMENT: '3566fe0a-792a-4edc-82d9-d39b01862d09'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2022-12-01T18:35:47.292Z INFO webdriver: RESULT true
+[0-0] 2022-12-01T18:35:47.293Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2022-12-01T18:35:47.293Z INFO webdriver: [POST] http://localhost:9515/session/a87fb56ad05442febffcb3de9c59b892/execute/sync[0-0] 2022-12-01T18:35:47.293Z INFO webdriver: DATA {
+[0-0]   script: 'isElementInViewport(...) [564 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': '3566fe0a-792a-4edc-82d9-d39b01862d09',
+[0-0]       ELEMENT: '3566fe0a-792a-4edc-82d9-d39b01862d09'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2022-12-01T18:35:47.306Z INFO webdriver: RESULT true
+[0-0] 2022-12-01T18:35:47.309Z INFO webdriver: COMMAND findElement("css selector", ".d-lg-flex.list-style-none > li:nth-of-type(3)")
+[0-0] 2022-12-01T18:35:47.309Z INFO webdriver: [POST] http://localhost:9515/session/a87fb56ad05442febffcb3de9c59b892/element     
+[0-0] 2022-12-01T18:35:47.309Z INFO webdriver: DATA {
+[0-0]   using: 'css selector',
+[0-0]   value: '.d-lg-flex.list-style-none > li:nth-of-type(3)'
+[0-0] }
+[0-0] 2022-12-01T18:35:47.333Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '0c28db25-c057-4732-b773-d26d7fa6f36c'
+[0-0] }
+[0-0] 2022-12-01T18:35:47.336Z INFO webdriver: COMMAND elementClick("0c28db25-c057-4732-b773-d26d7fa6f36c")
+[0-0] 2022-12-01T18:35:47.336Z INFO webdriver: [POST] http://localhost:9515/session/a87fb56ad05442febffcb3de9c59b892/element/0c28db25-c057-4732-b773-d26d7fa6f36c/click
+[3164:13016:1201/203547.846:ERROR:device_event_log_impl.cc(215)] [20:35:47.847] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+[3164:13016:1201/203547.850:ERROR:device_event_log_impl.cc(215)] [20:35:47.849] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+[0-0] 2022-12-01T18:35:48.397Z INFO webdriver: COMMAND findElement("xpath", "//div[contains(text(),"GitHub Sponsors")]")
+[0-0] 2022-12-01T18:35:48.397Z INFO webdriver: [POST] http://localhost:9515/session/a87fb56ad05442febffcb3de9c59b892/element
+[0-0] 2022-12-01T18:35:48.397Z INFO webdriver: DATA { using: 'xpath', value: '//div[contains(text(),"GitHub Sponsors")]' }       
+[0-0] 2022-12-01T18:35:48.419Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '3defa604-ede9-4ca0-a8fe-f0bd0227c13d'
+[0-0] }
+[0-0] 2022-12-01T18:35:48.424Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2022-12-01T18:35:48.424Z INFO webdriver: [POST] http://localhost:9515/session/a87fb56ad05442febffcb3de9c59b892/execute/sync[0-0] 2022-12-01T18:35:48.424Z INFO webdriver: DATA {
+[0-0]   script: 'isElementDisplayed(...) [7963 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': '3defa604-ede9-4ca0-a8fe-f0bd0227c13d',
+[0-0]       ELEMENT: '3defa604-ede9-4ca0-a8fe-f0bd0227c13d'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2022-12-01T18:35:48.443Z INFO webdriver: RESULT true
+[0-0] 2022-12-01T18:35:48.444Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2022-12-01T18:35:48.444Z INFO webdriver: [POST] http://localhost:9515/session/a87fb56ad05442febffcb3de9c59b892/execute/sync[0-0] 2022-12-01T18:35:48.444Z INFO webdriver: DATA {
+[0-0]   script: 'isElementInViewport(...) [564 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': '3defa604-ede9-4ca0-a8fe-f0bd0227c13d',
+[0-0]       ELEMENT: '3defa604-ede9-4ca0-a8fe-f0bd0227c13d'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2022-12-01T18:35:48.457Z INFO webdriver: RESULT true
+[0-0] 2022-12-01T18:35:48.460Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2022-12-01T18:35:48.460Z INFO webdriver: [DELETE] http://localhost:9515/session/a87fb56ad05442febffcb3de9c59b892
+[0-0] PASSED in chrome - C:\QA\LuxeQulity-project\webdriverio-test\test\specs\Spec5 - Dropdowns.js
+2022-12-01T18:35:48.775Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2022-12-01T18:35:48.777Z INFO @wdio/cli:launcher: Run onComplete hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 107.0.5304.122 windows #0-0] Running: chrome (v107.0.5304.122) on windows
+[chrome 107.0.5304.122 windows #0-0] Session ID: a87fb56ad05442febffcb3de9c59b892
+[chrome 107.0.5304.122 windows #0-0]
+[chrome 107.0.5304.122 windows #0-0] » \test\specs\Spec5 - Dropdowns.js
+[chrome 107.0.5304.122 windows #0-0] Check that dropdowns in navigation menu are opening.
+[chrome 107.0.5304.122 windows #0-0]    ✓ Open site and Hover the mouse over the "Product" menu item
+[chrome 107.0.5304.122 windows #0-0]    ✓ Hover the mouse over the "Solutions" menu item
+[chrome 107.0.5304.122 windows #0-0]    ✓ Hover the mouse over the "Open Source" menu item
+[chrome 107.0.5304.122 windows #0-0]
+[chrome 107.0.5304.122 windows #0-0] 3 passing (5.8s)
+
+
+Spec Files:      1 passed, 1 total (100% completed) in 00:00:08

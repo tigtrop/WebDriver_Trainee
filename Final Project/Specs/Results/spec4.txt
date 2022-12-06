@@ -1,0 +1,126 @@
+Execution of 1 workers started at 2022-12-01T15:26:00.459Z
+
+2022-12-01T15:26:00.495Z INFO @wdio/cli:launcher: Run onPrepare hook
+2022-12-01T15:26:00.562Z INFO chromedriver: Initiate Chromedriver Launcher (v8.0.0)
+2022-12-01T15:26:00.567Z INFO chromedriver: Start Chromedriver (C:\QA\LuxeQulity-project\webdriverio-test\node_modules\chromedriver\lib\chromedriver\chromedriver.exe) with args --port=9515 --url-base=/
+2022-12-01T15:26:00.603Z INFO chromedriver: Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 9515
+2022-12-01T15:26:00.603Z INFO chromedriver: Only local connections are allowed.
+2022-12-01T15:26:00.604Z INFO chromedriver: Please see https://chromedriver.chromium.org/security-considerations for suggestions 
+on keeping ChromeDriver safe.
+2022-12-01T15:26:00.614Z INFO chromedriver: ChromeDriver was started successfully.
+2022-12-01T15:26:00.705Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-12-01T15:26:00.710Z INFO @wdio/local-runner: Start worker 0-0 with arg: run,./wdio.conf.js,--spec,.\test\specs\Spec4 - invalid data.js
+[0-0] 2022-12-01T15:26:01.568Z INFO @wdio/local-runner: Run worker command: run
+[0-0] RUNNING in chrome - C:\QA\LuxeQulity-project\webdriverio-test\test\specs\Spec4 - invalid data.js
+[0-0] 2022-12-01T15:26:01.867Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2022-12-01T15:26:01.962Z INFO webdriver: [POST] http://localhost:9515/session
+[0-0] 2022-12-01T15:26:01.962Z INFO webdriver: DATA {
+[0-0]   capabilities: {
+[0-0]     alwaysMatch: {
+[0-0]       'experitest:accessKey': 'EXPERITEST_ACCESS_KEY',
+[0-0]       browserName: 'chrome',
+[0-0]       acceptInsecureCerts: true
+[0-0]     },
+[0-0]     firstMatch: [ {} ]
+[0-0]   },
+[0-0]   desiredCapabilities: {
+[0-0]     'experitest:accessKey': 'EXPERITEST_ACCESS_KEY',
+[0-0]     browserName: 'chrome',
+[0-0]     acceptInsecureCerts: true
+[0-0]   }
+[0-0] }
+
+DevTools listening on ws://127.0.0.1:8922/devtools/browser/42eeb1a5-60fb-401f-9a8f-f9e477a6bd53
+[0-0] 2022-12-01T15:26:02.860Z INFO webdriver: COMMAND navigateTo("https://github.com/")
+[0-0] 2022-12-01T15:26:02.861Z INFO webdriver: [POST] http://localhost:9515/session/c3dadf1736269816825b065872990c6f/url
+[0-0] 2022-12-01T15:26:02.861Z INFO webdriver: DATA { url: 'https://github.com/' }
+[0-0] 2022-12-01T15:26:04.392Z INFO webdriver: COMMAND findElement("css selector", "[href="/login"]")
+[0-0] 2022-12-01T15:26:04.393Z INFO webdriver: [POST] http://localhost:9515/session/c3dadf1736269816825b065872990c6f/element
+[0-0] 2022-12-01T15:26:04.393Z INFO webdriver: DATA { using: 'css selector', value: '[href="/login"]' }
+[0-0] 2022-12-01T15:26:04.416Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '3aa1c702-3b7c-4b4b-af3d-6608d8502dee'
+[0-0] }
+[0-0] 2022-12-01T15:26:04.428Z INFO webdriver: COMMAND elementClick("3aa1c702-3b7c-4b4b-af3d-6608d8502dee")
+[0-0] 2022-12-01T15:26:04.428Z INFO webdriver: [POST] http://localhost:9515/session/c3dadf1736269816825b065872990c6f/element/3aa1c702-3b7c-4b4b-af3d-6608d8502dee/click
+[0-0] 2022-12-01T15:26:07.060Z INFO webdriver: COMMAND findElement("css selector", "[href="/password_reset"]")
+[0-0] 2022-12-01T15:26:07.061Z INFO webdriver: [POST] http://localhost:9515/session/c3dadf1736269816825b065872990c6f/element
+[0-0] 2022-12-01T15:26:07.062Z INFO webdriver: DATA { using: 'css selector', value: '[href="/password_reset"]' }
+[0-0] 2022-12-01T15:26:07.113Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '8420c0cf-8a33-49e6-b340-821a5388e910'
+[0-0] }
+[0-0] 2022-12-01T15:26:07.124Z INFO webdriver: COMMAND elementClick("8420c0cf-8a33-49e6-b340-821a5388e910")
+[0-0] 2022-12-01T15:26:07.125Z INFO webdriver: [POST] http://localhost:9515/session/c3dadf1736269816825b065872990c6f/element/8420c0cf-8a33-49e6-b340-821a5388e910/click
+[8936:15584:1201/172610.685:ERROR:device_event_log_impl.cc(215)] [17:26:10.685] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+[8936:15584:1201/172610.689:ERROR:device_event_log_impl.cc(215)] [17:26:10.688] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+[0-0] 2022-12-01T15:26:11.664Z INFO webdriver: COMMAND findElement("css selector", "#email_field")
+[0-0] 2022-12-01T15:26:11.665Z INFO webdriver: [POST] http://localhost:9515/session/c3dadf1736269816825b065872990c6f/element
+[0-0] 2022-12-01T15:26:11.665Z INFO webdriver: DATA { using: 'css selector', value: '#email_field' }
+[0-0] 2022-12-01T15:26:11.689Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'a2a197cc-2a29-47ce-90a3-66faccaa7a70'
+[0-0] }
+[0-0] 2022-12-01T15:26:11.692Z INFO webdriver: COMMAND elementClick("a2a197cc-2a29-47ce-90a3-66faccaa7a70")
+[0-0] 2022-12-01T15:26:11.692Z INFO webdriver: [POST] http://localhost:9515/session/c3dadf1736269816825b065872990c6f/element/a2a197cc-2a29-47ce-90a3-66faccaa7a70/click
+[0-0] 2022-12-01T15:26:13.760Z INFO webdriver: COMMAND findElement("css selector", ".f4.mb-3")
+[0-0] 2022-12-01T15:26:13.760Z INFO webdriver: [POST] http://localhost:9515/session/c3dadf1736269816825b065872990c6f/element
+[0-0] 2022-12-01T15:26:13.761Z INFO webdriver: DATA { using: 'css selector', value: '.f4.mb-3' }
+[0-0] 2022-12-01T15:26:13.781Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '9cf56d96-fed3-4211-80d6-16e63476ac45'
+[0-0] }
+[0-0] 2022-12-01T15:26:13.786Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2022-12-01T15:26:13.787Z INFO webdriver: [POST] http://localhost:9515/session/c3dadf1736269816825b065872990c6f/execute/sync[0-0] 2022-12-01T15:26:13.787Z INFO webdriver: DATA {
+[0-0]   script: 'isElementDisplayed(...) [7963 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': '9cf56d96-fed3-4211-80d6-16e63476ac45',
+[0-0]       ELEMENT: '9cf56d96-fed3-4211-80d6-16e63476ac45'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2022-12-01T15:26:13.821Z INFO webdriver: RESULT true
+[0-0] 2022-12-01T15:26:13.824Z INFO webdriver: COMMAND findElement("css selector", ".js-octocaptcha-form-submit")
+[0-0] 2022-12-01T15:26:13.825Z INFO webdriver: [POST] http://localhost:9515/session/c3dadf1736269816825b065872990c6f/element     
+[0-0] 2022-12-01T15:26:13.825Z INFO webdriver: DATA { using: 'css selector', value: '.js-octocaptcha-form-submit' }
+[0-0] 2022-12-01T15:26:13.843Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': 'fc13b7b4-1873-4820-a135-a6091ae13656'
+[0-0] }
+[0-0] 2022-12-01T15:26:13.850Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2022-12-01T15:26:13.851Z INFO webdriver: [POST] http://localhost:9515/session/c3dadf1736269816825b065872990c6f/execute/sync[0-0] 2022-12-01T15:26:13.851Z INFO webdriver: DATA {
+[0-0]   script: 'isElementDisplayed(...) [7963 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': 'fc13b7b4-1873-4820-a135-a6091ae13656',
+[0-0]       ELEMENT: 'fc13b7b4-1873-4820-a135-a6091ae13656'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2022-12-01T15:26:13.864Z INFO webdriver: RESULT true
+[0-0] 2022-12-01T15:26:13.865Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2022-12-01T15:26:13.866Z INFO webdriver: [POST] http://localhost:9515/session/c3dadf1736269816825b065872990c6f/execute/sync[0-0] 2022-12-01T15:26:13.867Z INFO webdriver: DATA {
+[0-0]   script: 'isElementClickable(...) [5349 bytes]',
+[0-0]   args: [
+[0-0]     {
+[0-0]       'element-6066-11e4-a52e-4f735466cecf': 'fc13b7b4-1873-4820-a135-a6091ae13656',
+[0-0]       ELEMENT: 'fc13b7b4-1873-4820-a135-a6091ae13656'
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2022-12-01T15:26:13.883Z INFO webdriver: RESULT false
+[0-0] 2022-12-01T15:26:15.898Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2022-12-01T15:26:15.898Z INFO webdriver: [DELETE] http://localhost:9515/session/c3dadf1736269816825b065872990c6f
+[0-0] PASSED in chrome - C:\QA\LuxeQulity-project\webdriverio-test\test\specs\Spec4 - invalid data.js
+2022-12-01T15:26:16.193Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2022-12-01T15:26:16.194Z INFO @wdio/cli:launcher: Run onComplete hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 107.0.5304.122 windows #0-0] Running: chrome (v107.0.5304.122) on windows
+[chrome 107.0.5304.122 windows #0-0] Session ID: c3dadf1736269816825b065872990c6f
+[chrome 107.0.5304.122 windows #0-0]
+[chrome 107.0.5304.122 windows #0-0] » \test\specs\Spec4 - invalid data.js
+[chrome 107.0.5304.122 windows #0-0] Check the Forgot password page
+[chrome 107.0.5304.122 windows #0-0]    ✓ Check that capcha label is displayed and continue button is not active
+[chrome 107.0.5304.122 windows #0-0]
+[chrome 107.0.5304.122 windows #0-0] 1 passing (13.2s)
+
+
+Spec Files:      1 passed, 1 total (100% completed) in 00:00:15
